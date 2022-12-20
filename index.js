@@ -53,20 +53,49 @@
 
 // hello()
 
-let myPoints = 3
+// let myPoints = 3
 
-function add3Points() {
-    myPoints += 3
+// function add3Points() {
+//     myPoints += 3
+// }
+
+// function remove1Point() {
+//     myPoints -= 1
+// }
+
+// add3Points()
+// add3Points()
+// add3Points()
+// remove1Point()
+// remove1Point()
+
+// console.log(myPoints);
+// let errorText = document.getElementById("error")
+ 
+
+// function purchaseError() {
+//     errorText.innerText = "Something went wrong, please try again"
+// }
+
+let num1 = 8
+let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+let result = document.getElementById("sum-el")
+
+function add() {
+     result.textContent += num1 + num2
+add .
 }
 
-function remove1Point() {
-    myPoints -= 1
+function subtract() {
+    result.textContent += num1 - num2
 }
 
-add3Points()
-add3Points()
-add3Points()
-remove1Point()
-remove1Point()
+function divide() {
+    result.textContent += num1 / num2
+}
 
-console.log(myPoints);
+function multiply() {
+    result.textContent += num1 * num2
+}
