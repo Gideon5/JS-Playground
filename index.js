@@ -126,14 +126,32 @@
 //     console.log("Welcome")
 //  }
 
-let age = 100
+// let age = 100
 
-if (age < 100) {
-    console.log("Not eligible")
-} else if (age === 100) {
-    console.log("Here is your birthday card from the king")
+// if (age < 100) {
+//     console.log("Not eligible")
+// } else if (age === 100) {
+//     console.log("Here is your birthday card from the king")
 
+// }
+// else {
+//     console.log("Not elgible, you have already gotten one")
+// }
+let firstCard = 10
+let secondCard = 12
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+
+if (sum <= 20) {
+    console.log("Do you want to draw a new card?")
+} else if (sum === 21) {
+    console.log("Wohoo! You've got a Blackjack! ")
+    hasBlackJack = true
+} else {
+    console.log("You're out of the game!")
+    isAlive = false
 }
-else {
-    console.log("Not elgible, you have already gotten one")
-}
+
+console.log(hasBlackJack)
+console.log(isAlive)
