@@ -77,25 +77,42 @@
 //     errorText.innerText = "Something went wrong, please try again"
 // }
 
-let num1 = 8
-let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
-let result = document.getElementById("sum-el")
+// let num1 = 8
+// let num2 = 2
+// document.getElementById("num1-el").textContent = num1
+// document.getElementById("num2-el").textContent = num2
+// let result = document.getElementById("sum-el")
 
-function add() {
-     result.textContent += num1 + num2
-add .
-}
+// function add() {
+//      result.textContent += num1 + num2
 
-function subtract() {
-    result.textContent += num1 - num2
-}
+// }
 
-function divide() {
-    result.textContent += num1 / num2
-}
+// function subtract() {
+//     result.textContent += num1 - num2
+// }
 
-function multiply() {
-    result.textContent += num1 * num2
+// function divide() {
+//     result.textContent += num1 / num2
+// }
+
+// function multiply() {
+//     result.textContent += num1 * num2
+// }
+
+let firstCard = 11
+let secondCard = 10
+
+let sum = firstCard + secondCard
+
+console.log(sum)
+
+
+if (sum < 21) {
+    console.log("Do you want to draw a new card")
+} else if (sum === 21) {
+    console.log("You've gotten blackjack congratulation")
+} else  (sum > 21) {
+    console.log("You're out of the game")
+
 }
