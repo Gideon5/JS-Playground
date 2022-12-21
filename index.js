@@ -117,11 +117,23 @@
 
 // }
 
- let age = 22
+//  let age = 22
 
- if (age < 21 ) {
-    console.log("You cannot enter the club please leave")
+//  if (age < 21 ) {
+//     console.log("You cannot enter the club please leave")
 
- } else {
-    console.log("Welcome")
- }
+//  } else {
+//     console.log("Welcome")
+//  }
+
+let age = 100
+
+if (age < 100) {
+    console.log("Not eligible")
+} else if (age === 100) {
+    console.log("Here is your birthday card from the king")
+
+}
+else {
+    console.log("Not elgible, you have already gotten one")
+}
