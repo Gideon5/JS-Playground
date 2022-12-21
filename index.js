@@ -100,19 +100,28 @@
 //     result.textContent += num1 * num2
 // }
 
-let firstCard = 11
-let secondCard = 10
+// let firstCard = 11
+// let secondCard = 10
 
-let sum = firstCard + secondCard
+// let sum = firstCard + secondCard
 
-console.log(sum)
+// console.log(sum)
 
 
-if (sum < 21) {
-    console.log("Do you want to draw a new card")
-} else if (sum === 21) {
-    console.log("You've gotten blackjack congratulation")
-} else  (sum > 21) {
-    console.log("You're out of the game")
+// if (sum < 21) {
+//     console.log("Do you want to draw a new card")
+// } else if (sum === 21) {
+//     console.log("You've gotten blackjack congratulation")
+// } else  (sum > 21) {
+//     console.log("You're out of the game")
 
-}
+// }
+
+ let age = 22
+
+ if (age < 21 ) {
+    console.log("You cannot enter the club please leave")
+
+ } else {
+    console.log("Welcome")
+ }
