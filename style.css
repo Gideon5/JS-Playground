@@ -21,6 +21,7 @@ button {
     width: 150px;
     background: goldenrod;
     padding: 5px 0px 5px 0px;
+    margin-bottom: 5px;
     font-weight: bold;
     border: none;
     border-radius: 2px;
