@@ -137,40 +137,70 @@
 // else {
 //     console.log("Not elgible, you have already gotten one")
 // }
-let firstCard = 10
-let secondCard = 11
-let sum = firstCard + secondCard
-let hasBlackJack = false
-let isAlive = true
-let message = ""
-let messageEl = document.getElementById("message-el")
-// let sumEl = document.getElementById("sum-el")
-let sumEl = document.querySelector("#sum-el")
-let cardsEl = document.querySelector("#cards-el")
+// let firstCard = 4
+// let secondCard = 11
+// let cards = [firstCard, secondCard]//card array
 
-function startGame() {
-    if (sum <= 20) {
-        message = "Do you want to draw a new card"
-    } 
-    else if (sum === 21) {
-        message= "Woohoo! You've got a blackjack"
-        hasBlackJack = true
-    } 
-    else {
-        message = "You're out of the game"
-        isAlive = false
-    }
+// let sum = firstCard + secondCard
+// let hasBlackJack = false
+// let isAlive = true
+// let message = ""
+// let messageEl = document.getElementById("message-el")
+// // let sumEl = document.getElementById("sum-el")
+// let sumEl = document.querySelector("#sum-el")
+// let cardsEl = document.querySelector("#cards-el")
 
-    messageEl.textContent = message
-    cardsEl.textContent = "Cards: " +  firstCard + " " + secondCard
-    sumEl.textContent += sum
-    console.log(firstCard)
+// function startGame() {
+//     renderGame()
+// }
+
+// function renderGame() {
+//     if (sum <= 20) {
+//         message = "Do you want to draw a new card"
+//     } 
+//     else if (sum === 21) {
+//         message= "Woohoo! You've got a blackjack"
+//         hasBlackJack = true
+//     } 
+//     else {
+//         message = "You're out of the game"
+//         isAlive = false
+//     }
+
+//     messageEl.textContent = message
+//     cardsEl.textContent = "Cards: " +  firstCard + " " + secondCard
+//     sumEl.textContent += sum
+//     console.log(firstCard)
     
 
-}
+// }
 
-function newCard() {
-    console.log("Drawing a new card")
-}
+// function newCard() {
+//     console.log("Drawing a new card from the deck")
+//     let card = 3
+//     sum += card
+
+//     renderGame()
+
+
+// }
+
 // console.log(hasBlackJack)
 // console.log(isAlive)
+
+let featuredPosts = [
+    "Check out my Netflix", 
+    "Here's code for my projects",
+    "My portfolio link"
+]
+
+let bio = [
+    "5 years experience with React, Laravel and Python",
+    "Senior High School Graduate",
+    "Certified Alx Programmer",
+    "Javascript, , PHP"
+]
+console.log(bio.length)
+// .log(bio [0])
+// 5454
+ 
