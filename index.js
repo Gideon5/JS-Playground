@@ -204,5 +204,19 @@
 // .log(bio [0])
 // 5454
  
-let myself = ["My name is gideon", "I am 23 years old", true ]
-console.log(myself[2])
+// let myself = ["My name is gideon", "I am 23 years old", true ]
+// console.log(myself[2])
+
+// myself.push("abeiku")
+
+let messages = [
+    "Hey, how's it going",
+    "i'm great, thank you",
+    "All been good. Been busy lately"
+]
+
+let newMessage = " Same here!"
+
+messages.push(newMessage)
+
+console.log(messages)
