@@ -188,19 +188,21 @@
 // console.log(hasBlackJack)
 // console.log(isAlive)
 
-let featuredPosts = [
-    "Check out my Netflix", 
-    "Here's code for my projects",
-    "My portfolio link"
-]
+// let featuredPosts = [
+//     "Check out my Netflix", 
+//     "Here's code for my projects",
+//     "My portfolio link"
+// ]
 
-let bio = [
-    "5 years experience with React, Laravel and Python",
-    "Senior High School Graduate",
-    "Certified Alx Programmer",
-    "Javascript, , PHP"
-]
-console.log(bio.length)
+// let bio = [
+//     "5 years experience with React, Laravel and Python",
+//     "Senior High School Graduate",
+//     "Certified Alx Programmer",
+//     "Javascript, , PHP"
+// ]
+// console.log(bio.length)
 // .log(bio [0])
 // 5454
  
+let myself = ["My name is gideon", "I am 23 years old", true ]
+console.log(myself[2])
