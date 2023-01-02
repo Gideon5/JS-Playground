@@ -194,7 +194,6 @@ function renderGame() {
 }
 
 function newCard() {
-    console.log("Drawing a new card from the deck")
     let card = 3
     sum += card
     cards.push(card)
@@ -275,3 +274,28 @@ console.log(isAlive)
 //     console.log(sentence[i])
 //     greetingEl.textContent += sentence[i] + " "
 // }
+
+let player1Time = 102
+let player2Time = 107
+
+function getFastestRaceTime() {
+    if (player1Time < player2Time) 
+    {
+        return player2Time
+    } else if (player1Time > player1Time)
+    {
+        return player1Time
+    } else {
+        return player1Time
+    }
+}
+
+// let getFastestRace = getFastestRaceTime()
+
+function getTotalRaceTime() {
+    return player1Time + player2Time
+}
+
+totRaceTime = getTotalRaceTime()
+
+console.log(totRaceTime)
