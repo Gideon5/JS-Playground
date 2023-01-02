@@ -149,8 +149,8 @@
 
 
 
-let firstCard = 4
-let secondCard = 11
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]//card array
 
 let sum = firstCard + secondCard
@@ -161,6 +161,11 @@ let messageEl = document.getElementById("message-el")
 // let sumEl = document.getElementById("sum-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
+
+function getRandomCard() 
+{
+    return 5
+}
 
 function startGame() {
     renderGame()
@@ -194,7 +199,7 @@ function renderGame() {
 }
 
 function newCard() {
-    let card = 3
+    let card = getRandomCard()
     sum += card
     cards.push(card)
     console.log(cards)
@@ -275,27 +280,38 @@ console.log(isAlive)
 //     greetingEl.textContent += sentence[i] + " "
 // }
 
-let player1Time = 102
-let player2Time = 107
+// let player1Time = 102
+// let player2Time = 107
 
-function getFastestRaceTime() {
-    if (player1Time < player2Time) 
-    {
-        return player2Time
-    } else if (player1Time > player1Time)
-    {
-        return player1Time
-    } else {
-        return player1Time
-    }
+// function getFastestRaceTime() {
+//     if (player1Time < player2Time) 
+//     {
+//         return player2Time
+//     } else if (player1Time > player1Time)
+//     {
+//         return player1Time
+//     } else {
+//         return player1Time
+//     }
+// }
+
+// // let getFastestRace = getFastestRaceTime()
+
+// function getTotalRaceTime() {
+//     return player1Time + player2Time
+// }
+
+// totRaceTime = getTotalRaceTime()
+
+// console.log(totRaceTime)
+
+// let randomNumber = Math.floor(Math.random() * 6) + 1
+
+// console.log(randomNumber)
+
+function rollDice() {
+     randNumber = Math.floor(Math.random() * 6 + 1)
+     return randNumber
 }
 
-// let getFastestRace = getFastestRaceTime()
-
-function getTotalRaceTime() {
-    return player1Time + player2Time
-}
-
-totRaceTime = getTotalRaceTime()
-
-console.log(totRaceTime)
+console.log(rollDice())
