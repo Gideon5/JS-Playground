@@ -149,58 +149,64 @@
 
 
 
-// let firstCard = 4
-// let secondCard = 11
-// let cards = [firstCard, secondCard]//card array
+let firstCard = 4
+let secondCard = 11
+let cards = [firstCard, secondCard]//card array
 
-// let sum = firstCard + secondCard
-// let hasBlackJack = false
-// let isAlive = true
-// let message = ""
-// let messageEl = document.getElementById("message-el")
-// // let sumEl = document.getElementById("sum-el")
-// let sumEl = document.querySelector("#sum-el")
-// let cardsEl = document.querySelector("#cards-el")
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+// let sumEl = document.getElementById("sum-el")
+let sumEl = document.querySelector("#sum-el")
+let cardsEl = document.querySelector("#cards-el")
 
-// function startGame() {
-//     renderGame()
-// }
+function startGame() {
+    renderGame()
+}
 
-// function renderGame() {
-//     if (sum <= 20) {
-//         message = "Do you want to draw a new card"
-//     } 
-//     else if (sum === 21) {
-//         message= "Woohoo! You've got a blackjack"
-//         hasBlackJack = true
-//     } 
-//     else {
-//         message = "You're out of the game"
-//         isAlive = false
-//     }
+function renderGame() {
+    cardsEl.textContent = "Cards: " 
 
-//     messageEl.textContent = message
-//     cardsEl.textContent = "Cards: " +  cards [0] + " " + cards [1]
-//     sumEl.textContent += sum
-//     console.log(firstCard)
+    for ( i = 0; i < cards.length; i++)
+    {
+        cardsEl.textContent += cards[i] + " "
+    }
+
+    if (sum <= 20) {
+        message = "Do you want to draw a new card"
+    } 
+    else if (sum === 21) {
+        message= "Woohoo! You've got a blackjack"
+        hasBlackJack = true
+    } 
+    else {
+        message = "You're out of the game"
+        isAlive = false
+    }
+
+    messageEl.textContent = message
+    sumEl.textContent += sum
+    console.log(firstCard)
     
 
-// }
+}
 
-// function newCard() {
-//     console.log("Drawing a new card from the deck")
-//     let card = 3
-//     sum += card
-//     cards.push(card)
-//     console.log(cards)
+function newCard() {
+    console.log("Drawing a new card from the deck")
+    let card = 3
+    sum += card
+    cards.push(card)
+    console.log(cards)
 
-//     renderGame()
+    renderGame()
 
 
-// }
+}
 
-// console.log(hasBlackJack)
-// console.log(isAlive)
+console.log(hasBlackJack)
+console.log(isAlive)
 
 
 
@@ -261,11 +267,11 @@
 //     console.log(cards [i])
 // }
 
-let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
-let greetingEl = document.getElementById("greeting-el")
+// let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+// let greetingEl = document.getElementById("greeting-el")
 
 
-for (i = 0; i < sentence.length; i++) {
-    console.log(sentence[i])
-    greetingEl.textContent += sentence[i]
-}
+// for (i = 0; i < sentence.length; i++) {
+//     console.log(sentence[i])
+//     greetingEl.textContent += sentence[i] + " "
+// }
