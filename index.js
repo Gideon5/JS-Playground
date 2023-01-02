@@ -403,8 +403,16 @@ console.log(isAlive)
 //     console.log("senoir citizen dsicount")
 // }
 
-let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+// let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
 
-for ( let i = 0; i < largeCountries.length; i++){
-    console.log(largeCountries[i])
-}
+// for ( let i = 0; i < largeCountries.length; i++){
+//     console.log(largeCountries[i])
+// }
+
+let largeCountries = ["Tuvala", "India", "USA", "Indonesia", "Monaco"]
+largeCountries.shift()
+largeCountries.unshift("China")
+largeCountries.pop()
+largeCountries.push("Pakistan")
+
+console.log(largeCountries)
