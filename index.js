@@ -368,3 +368,11 @@ console.log(isAlive)
 // function recommendMovie() {
 //     console.log("Hey, check out this new files we think ce go like am")
 // } 
+// let castle = {
+//     available: true,
+//     name: "Maguireshire",
+//     rooms: 4,
+//     special: ["servants", "jacuzzi"]
+// }
+
+// console.log(castle.special)
