@@ -420,7 +420,17 @@ console.log(isAlive)
 let dayOfMonth = 31
 let weekday = "Friday"
 
-if (dayOfMonth == 31 && weekday == "Friday")
+if (dayOfMonth === 31 && weekday === "Friday")
 {
     console.log("Spooky face")
 }
+
+let hands = ["rocks", "paper", "scissor"]
+
+function picker() {
+    rand = Math.floor(Math.random()*3);
+
+    console.log(hands[rand])
+}
+
+picker()
