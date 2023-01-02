@@ -389,16 +389,22 @@ console.log(isAlive)
 
 // logData()
 
-let age = 30
+// let age = 30
 
-if ( age < 6) {
-    console.log("free")
-} else if (age >= 6 && age <= 17) {
-    console.log("Child dsicount")
-} else if (age >= 18 && age <= 26) {
-    console.log("student discount")
-} else if (age >= 27 && age <= 66) {
-    console.log("Full price")
-} else {
-    console.log("senoir citizen dsicount")
+// if ( age < 6) {
+//     console.log("free")
+// } else if (age >= 6 && age <= 17) {
+//     console.log("Child dsicount")
+// } else if (age >= 18 && age <= 26) {
+//     console.log("student discount")
+// } else if (age >= 27 && age <= 66) {
+//     console.log("Full price")
+// } else {
+//     console.log("senoir citizen dsicount")
+// }
+
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+for ( let i = 0; i < largeCountries.length; i++){
+    console.log(largeCountries[i])
 }
