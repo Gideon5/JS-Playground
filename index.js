@@ -234,19 +234,23 @@
 // .log(bio [0])
 // 5454
  
-let myself = ["My name is gideon", "I am 23 years old", true ]
-console.log(myself[2])
+// let myself = ["My name is gideon", "I am 23 years old", true ]
+// console.log(myself[2])
 
-myself.push("abeiku")
+// myself.push("abeiku")
 
-let messages = [
-    "Hey, how's it going",
-    "i'm great, thank you",
-    "All been good. Been busy lately"
-]
+// let messages = [
+//     "Hey, how's it going",
+//     "i'm great, thank you",
+//     "All been good. Been busy lately"
+// ]
 
-let newMessage = " Same here!" 
+// let newMessage = " Same here!" 
 
-for (let count = 10; count < 21; count+= 1) { 
-    console.log(count)
+// for (let count = 10; count < 21; count+= 1) { 
+//     console.log(count)
+// }
+
+for ( let i = 10; i < 101; i+= 10) {
+    console.log(i)
 }
