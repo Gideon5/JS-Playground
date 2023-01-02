@@ -458,13 +458,18 @@
 //     console.log("button clicked")
 // }
 
-// let savebtn = document.querySelector("#input-btn")
-// savebtn.addEventListener("click", function(){
-//     alert("hello world")
-// })
 
-let boxBtn = document.querySelector("#box")
-boxBtn.addEventListener("click", function() {
-    alert("u want to open abi?")
-    console.log("i want to open this box")
-}) 
+let myLeads = []
+let inputEl = document.querySelector("#input-el")
+
+
+let savebtn = document.querySelector("#input-btn")
+savebtn.addEventListener("click", function(){
+    console.log("Button clicked!")
+})
+
+// let boxBtn = document.querySelector("#box")
+// boxBtn.addEventListener("click", function() {
+//     alert("u want to open abi?")
+//     console.log("i want to open this box")
+// }) 
