@@ -377,14 +377,28 @@ console.log(isAlive)
 
 // console.log(castle.special)
 
-let person = {
-    name: "Gideon",
-    age: 27,
-    country: "Libya"
-}
+// let person = {
+//     name: "Gideon",
+//     age: 27,
+//     country: "Libya"
+// }
 
-function logData() {
-    console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
-}
+// function logData() {
+//     console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+// }
 
-logData()
+// logData()
+
+let age = 30
+
+if ( age < 6) {
+    console.log("free")
+} else if (age >= 6 && age <= 17) {
+    console.log("Child dsicount")
+} else if (age >= 18 && age <= 26) {
+    console.log("student discount")
+} else if (age >= 27 && age <= 66) {
+    console.log("Full price")
+} else {
+    console.log("senoir citizen dsicount")
+}
