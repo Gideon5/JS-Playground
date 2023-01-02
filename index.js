@@ -214,13 +214,16 @@ function renderGame() {
 }
 
 function newCard() {
+
+    if ( isAlive === true && hasBlackJack === false ){
+    
     let card = getRandomCard()
     sum += card
     cards.push(card)
     console.log(cards)
 
     renderGame()
-
+    }
 
 }
 
@@ -333,14 +336,26 @@ console.log(isAlive)
 
 //LOGICAL OPERATORS
 
-let hasSolvedChallenge = false
-let hasHintsLeft = false
+// let hasSolvedChallenge = false
+// let hasHintsLeft = false
 
-if (hasSolvedChallenge == false && hasHintsLeft == false)
-{
-    showSolution()
-}
+// if (hasSolvedChallenge == false && hasHintsLeft == false)
+// {
+//     showSolution()
+// }
 
-function showSolution() {
-    console.log("Show the solution..............")
-}
+// function showSolution() {
+//     console.log("Show the solution..............")
+// }
+
+// let likesDocumentaries = true
+// let likesStartups = false
+
+// if ( likesDocumentaries == true || likesStartups == true)
+// {
+
+//     recommendMovie()
+// }
+// function recommendMovie() {
+//     console.log("Hey, check out this new files we think ce go like am")
+// } 
