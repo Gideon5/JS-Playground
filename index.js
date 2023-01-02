@@ -164,6 +164,7 @@ let player = {
     name: "Alex",
     chips: 124
 }
+console.log(player)
 
 let playerEl = document.querySelector("#player-el")
 playerEl.textContent = player.name + ' ' + " : $" + player.chips
@@ -417,20 +418,37 @@ console.log(isAlive)
 
 // console.log(largeCountries)
 
-let dayOfMonth = 31
-let weekday = "Friday"
+// let dayOfMonth = 31
+// let weekday = "Friday"
 
-if (dayOfMonth === 31 && weekday === "Friday")
-{
-    console.log("Spooky face")
+// if (dayOfMonth === 31 && weekday === "Friday")
+// {
+//     console.log("Spooky face")
+// }
+
+// let hands = ["rocks", "paper", "scissor"]
+
+// function picker() {
+//     rand = Math.floor(Math.random()*3);
+
+//     console.log(hands[rand])
+// }
+
+// picker()
+
+let fruits = ["apple", "orange", "apple", "apple", "orange"]
+let appleShelf = document.querySelector("#apple-shelf")
+let orangeShelf = document.querySelector("#orange-shelf")
+
+function placer () {
+    for (let i = 0; i < fruits.length; i ++){
+        if (fruits[i] === "orange"){
+            orangeShelf.textContent += fruits[i] + " "
+        }
+        else if (fruits[i] === "apple"){
+            appleShelf.textContent +=  fruits[i] + " "
+        }
+    }
 }
 
-let hands = ["rocks", "paper", "scissor"]
-
-function picker() {
-    rand = Math.floor(Math.random()*3);
-
-    console.log(hands[rand])
-}
-
-picker()
+placer()
