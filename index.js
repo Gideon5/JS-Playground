@@ -164,7 +164,8 @@ let cardsEl = document.querySelector("#cards-el")
 
 function getRandomCard() 
 {
-    return 5
+    return  Math.floor(Math.random() * 13 + 1)
+     
 }
 
 function startGame() {
@@ -309,9 +310,9 @@ console.log(isAlive)
 
 // console.log(randomNumber)
 
-function rollDice() {
-     randNumber = Math.floor(Math.random() * 6 + 1)
-     return randNumber
-}
+// function rollDice() {
+//      randNumber = Math.floor(Math.random() * 6 + 1)
+//      return randNumber
+// }
 
-console.log(rollDice())
+// console.log(rollDice())
