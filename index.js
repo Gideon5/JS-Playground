@@ -159,6 +159,15 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
 
+
+let player = {
+    name: "Alex",
+    chips: 124
+}
+
+let playerEl = document.querySelector("#player-el")
+playerEl.textContent = player.name + ' ' + " : $" + player.chips
+
 function getRandomCard() 
 {
     randNumber = Math.floor(Math.random() * 13) + 1
