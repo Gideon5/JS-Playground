@@ -137,6 +137,18 @@
 // else {
 //     console.log("Not elgible, you have already gotten one")
 // }
+
+
+
+
+
+
+
+
+
+
+
+
 // let firstCard = 4
 // let secondCard = 11
 // let cards = [firstCard, secondCard]//card array
@@ -168,7 +180,7 @@
 //     }
 
 //     messageEl.textContent = message
-//     cardsEl.textContent = "Cards: " +  firstCard + " " + secondCard
+//     cardsEl.textContent = "Cards: " +  cards [0] + " " + cards [1]
 //     sumEl.textContent += sum
 //     console.log(firstCard)
     
@@ -179,6 +191,8 @@
 //     console.log("Drawing a new card from the deck")
 //     let card = 3
 //     sum += card
+//     cards.push(card)
+//     console.log(cards)
 
 //     renderGame()
 
@@ -187,6 +201,22 @@
 
 // console.log(hasBlackJack)
 // console.log(isAlive)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let featuredPosts = [
 //     "Check out my Netflix", 
@@ -204,10 +234,10 @@
 // .log(bio [0])
 // 5454
  
-// let myself = ["My name is gideon", "I am 23 years old", true ]
-// console.log(myself[2])
+let myself = ["My name is gideon", "I am 23 years old", true ]
+console.log(myself[2])
 
-// myself.push("abeiku")
+myself.push("abeiku")
 
 let messages = [
     "Hey, how's it going",
@@ -215,8 +245,8 @@ let messages = [
     "All been good. Been busy lately"
 ]
 
-let newMessage = " Same here!"
+let newMessage = " Same here!" 
 
-messages.push(newMessage)
-
-console.log(messages)
+for (let count = 10; count < 21; count+= 1) { 
+    console.log(count)
+}
