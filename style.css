@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 background-color: rgb(25, 81, 25);
 background-size: cover;
@@ -26,4 +26,39 @@ button {
     border: none;
     border-radius: 2px;
 
+} */
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 0px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 1px solod black;
+    margin-bottom: 4px;
+
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: #5f9341;
+    padding: 10px 20px ;
+    width: 15%;
+    border: none;
+    font-weight: bold;
+}   
+
+#box {
+    cursor: pointer;
+    background: red;
+    padding: 40px;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    font-weight: bold;
 }
