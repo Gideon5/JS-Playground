@@ -376,3 +376,15 @@ console.log(isAlive)
 // }
 
 // console.log(castle.special)
+
+let person = {
+    name: "Gideon",
+    age: 27,
+    country: "Libya"
+}
+
+function logData() {
+    console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+}
+
+logData()
