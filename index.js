@@ -464,13 +464,15 @@ const inputEl = document.querySelector("#input-el")
 const savebtn = document.querySelector("#input-btn")
 
 savebtn.addEventListener("click", function(){
+    let val = document.getElementById("input-el").value
+    myLeads.push(val)
 myLeads.push("www.awesomelead.com")
+console.log(myLeads)
 })
 
-console.log(myLeads)
 
 // let boxBtn = document.querySelector("#box")
 // boxBtn.addEventListener("click", function() {
 //     alert("u want to open abi?")
 //     console.log("i want to open this box")
-// }) 
+// })
