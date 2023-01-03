@@ -460,15 +460,15 @@
 
 
 let myLeads = []
-const inputEl = document.querySelector("#input-el")
-const savebtn = document.querySelector("#input-btn")
+const inputEl = document.getElementById("input-el")
+const savebtn = document.getElementById("input-btn")
 
-savebtn.addEventListener("click", function(){
-    let val = document.getElementById("input-el").value
-    myLeads.push(val)
-myLeads.push("www.awesomelead.com")
+savebtn.addEventListener("click", function()
+{
+    myLeads.push(inputEl.value)
 console.log(myLeads)
-})
+}
+)
 
 
 // let boxBtn = document.querySelector("#box")
