@@ -511,3 +511,11 @@ buyBtn.innerHTML = listItems
 //     alert("u want to open abi?")
 //     console.log("i want to open this box")
 // })
+
+//Template String
+
+const recipient = "James"
+
+const email = `Hey ${recipient} !How are is it going? Cheers Per`
+
+console.log(email)
