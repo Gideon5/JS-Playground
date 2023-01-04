@@ -464,6 +464,7 @@ const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const buyBtn = document.getElementById("div-el")
+let listItems = ""
 
 savebtn.addEventListener("click", function()
 {
@@ -473,13 +474,26 @@ console.log(myLeads)
 )
 
 for ( let i = 0; i < myLeads.length; i++){
-    ulEl.innerHTML += "<li>" + myLeads[i]  + "</li>"
-}
-buyBtn.innerHTML = "<button onclick='buy()'>BUY!</button>" 
 
-function buy() {
-    buyBtn.innerHTML += "<p>Thank you for buying!</p>"
+      listItems += "<li>" + myLeads[i]  + "</li>"
+
+  
+    // const li = document.createElement("li")
+    // li.textContent = myLeads[i]
+    // buyBtn.append(li)
 }
+
+buyBtn.innerHTML = listItems
+// buyBtn.innerHTML = "<button onclick='buy()'>BUY!</button>" 
+
+// function buy() {
+//     buyBtn.innerHTML += "<p>Thank you for buying!</p>"
+//
+//diff process
+//create elemet
+//set text content
+// append to ul
+//}
 
 
 // let boxBtn = document.querySelector("#box")
