@@ -475,7 +475,11 @@ console.log(myLeads)
 for ( let i = 0; i < myLeads.length; i++){
     ulEl.innerHTML += "<li>" + myLeads[i]  + "</li>"
 }
-buyBtn.innerHTML = "<button>BUY!</button>"
+buyBtn.innerHTML = "<button onclick='buy()'>BUY!</button>" 
+
+function buy() {
+    buyBtn.innerHTML += "<p>Thank you for buying!</p>"
+}
 
 
 // let boxBtn = document.querySelector("#box")
