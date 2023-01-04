@@ -463,7 +463,7 @@ let myLeads = ["www.lapaz.com", "www.pigloc.com", "www.lonely.com"]
 const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
-
+const buyBtn = document.getElementById("div-el")
 
 savebtn.addEventListener("click", function()
 {
@@ -475,6 +475,7 @@ console.log(myLeads)
 for ( let i = 0; i < myLeads.length; i++){
     ulEl.innerHTML += "<li>" + myLeads[i]  + "</li>"
 }
+buyBtn.innerHTML = "<button>BUY!</button>"
 
 
 // let boxBtn = document.querySelector("#box")
