@@ -515,7 +515,8 @@ buyBtn.innerHTML = listItems
 //Template String
 
 const recipient = "James"
+sender = "Salis"
 
-const email = `Hey ${recipient} !How are is it going? Cheers Per`
+const email = `Hey ${recipient} !How are is it going? Cheers ${sender}`
 
 console.log(email)
