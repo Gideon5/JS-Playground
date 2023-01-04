@@ -459,7 +459,7 @@
 // }
 
 
-let myLeads = ["www.lapaz.com", "www.pigloc.com", "www.lonely.com"]
+let myLeads = []
 const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -469,13 +469,15 @@ let listItems = ""
 savebtn.addEventListener("click", function()
 {
     myLeads.push(inputEl.value)
-console.log(myLeads)
+    renderLeads()
+// console.log(myLeads)
 }
 )
-
+function renderLeads() {
 for ( let i = 0; i < myLeads.length; i++){
 
       listItems += "<li>" + myLeads[i]  + "</li>"
+    //   console.log(list)
 
   
     // const li = document.createElement("li")
@@ -484,6 +486,7 @@ for ( let i = 0; i < myLeads.length; i++){
 }
 
 buyBtn.innerHTML = listItems
+}
 // buyBtn.innerHTML = "<button onclick='buy()'>BUY!</button>" 
 
 // function buy() {
