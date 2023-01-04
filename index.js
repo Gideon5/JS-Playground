@@ -462,6 +462,8 @@
 let myLeads = ["www.lapaz.com", "www.pigloc.com", "www.lonely.com"]
 const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
 
 savebtn.addEventListener("click", function()
 {
@@ -471,7 +473,7 @@ console.log(myLeads)
 )
 
 for ( let i = 0; i < myLeads.length; i++){
-    console.log(myLeads[i])
+    ulEl.innerHTML += "<li>" + myLeads[i]  + "</li>"
 }
 
 
