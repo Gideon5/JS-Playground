@@ -62,3 +62,18 @@ button {
     color: white;
     font-weight: bold;
 }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+li {
+
+    margin-top: 5px;
+}
+
+a {
+    color: #5f9341;
+}

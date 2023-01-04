@@ -480,7 +480,7 @@ for ( let i = 0; i < myLeads.length; i++){
       listItems += `
       <li>
          <a target='_blank' href='${myLeads[i]}'>
-         ${myLeads[i]}
+            ${myLeads[i]}
          </a>
       </li>
       `
@@ -514,9 +514,15 @@ buyBtn.innerHTML = listItems
 
 //Template String
 
-const recipient = "James"
-sender = "Salis"
+// const recipient = "James"
+// sender = "Salis"
 
-const email = `Hey ${recipient} !How are is it going? Cheers ${sender}`
+// const email = `Hey ${recipient} 
+// !How are
+ 
 
-console.log(email)
+// is it going?
+
+// Cheers ${sender}`
+
+// console.log(email)
