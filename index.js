@@ -477,8 +477,8 @@ function renderLeads() {
     let listItems = ""
 for ( let i = 0; i < myLeads.length; i++){
 
-      listItems += "<li>" + myLeads[i]  + "</li>"
-    //   console.log(list)
+      listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i]  + "</a></li>"
+    console.log(listItems)
 
   
     // const li = document.createElement("li")
