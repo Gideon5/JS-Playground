@@ -464,16 +464,17 @@ const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const buyBtn = document.getElementById("div-el")
-let listItems = ""
 
 savebtn.addEventListener("click", function()
 {
     myLeads.push(inputEl.value)
+    inputEl.value = '';
     renderLeads()
 // console.log(myLeads)
 }
 )
 function renderLeads() {
+    let listItems = ""
 for ( let i = 0; i < myLeads.length; i++){
 
       listItems += "<li>" + myLeads[i]  + "</li>"
