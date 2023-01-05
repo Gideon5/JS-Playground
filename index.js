@@ -532,3 +532,7 @@ buyBtn.innerHTML = listItems
 // Cheers ${sender}`
 
 // console.log(email)
+
+// localStorage.setItem("myLeads", "https://setnewsite.com")
+console.log(localStorage.getItem("myLeads"))
+localStorage.clear()
