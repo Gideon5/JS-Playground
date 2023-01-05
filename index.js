@@ -465,6 +465,12 @@ const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const buyBtn = document.getElementById("div-el")
 
+
+
+// localStorage.setItem("myLeads", "www.abaane.com")//setter
+// console.log(localStorage.getItem("myLeads"))//getter
+
+
 savebtn.addEventListener("click", function()
 {
     myLeads.push(inputEl.value)
