@@ -459,7 +459,11 @@
 // }
 
 
-let myLeads = []
+let myLeads = `["www.zanku.com"]`
+myLeads = JSON.parse(myLeads)
+myLeads.push("amina.com")
+console.log(myLeads)
+
 const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -534,5 +538,5 @@ buyBtn.innerHTML = listItems
 // console.log(email)
 
 // localStorage.setItem("myLeads", "https://setnewsite.com")
-console.log(localStorage.getItem("myLeads"))
-localStorage.clear()
+// console.log(localStorage.getItem("myLeads"))
+// localStorage.clear()
