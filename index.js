@@ -460,9 +460,19 @@
 
 
 let myLeads = `["www.zanku.com"]`
+
 myLeads = JSON.parse(myLeads)
-myLeads.push("amina.com")
-console.log(myLeads)
+myLeads.push("www.abnie(newsite opushed")
+myLeads = JSON.stringify(myLeads)
+console.log(typeof myLeads)
+
+
+
+
+// myLeads =JSON.stringify(myLeads)
+// // myLeads = JSON.parse(myLeads)
+// // myLeads.push("amina.com")
+// console.log(typeof myLeads)
 
 const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
