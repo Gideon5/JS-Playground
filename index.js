@@ -482,6 +482,7 @@ const ulEl = document.getElementById("ul-el")
 const buyBtn = document.getElementById("div-el")
 const delBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const tabBtn = document.getElementById("tab-btn")
 
 // localStorage.setItem("myLeads", "www.abaane.com")//setter
 // console.log(localStorage.getItem("myLeads"))//getter
@@ -491,6 +492,14 @@ if (leadsFromLocalStorage)
     myLeads = leadsFromLocalStorage
     render(myLeads)
 }
+
+const tab = [
+    {url: "www.lic.com"}
+]
+
+tabBtn.addEventListener("click", function (){
+    console.log(tab[0].url)
+})
 
 
 function render(leads) {
