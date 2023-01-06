@@ -569,3 +569,9 @@ savebtn.addEventListener("click", function()
 // localStorage.setItem("myLeads", "https://setnewsite.com")
 // console.log(localStorage.getItem("myLeads"))
 // localStorage.clear()
+
+function greetUser(name, greeting) {
+    console.log( greeting + name)
+}
+
+greetUser("aloid")
