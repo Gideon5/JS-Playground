@@ -570,16 +570,26 @@ savebtn.addEventListener("click", function()
 // console.log(localStorage.getItem("myLeads"))
 // localStorage.clear()
 
-function greetUser(name, greeting) {
-    console.log( `${greeting}, ${name}`)
+// function greetUser(name, greeting) {
+//     console.log( `${greeting}, ${name}`)
+// }
+
+// greetUser("hwllo", "motto")
+
+// function add(num1, num2) {
+//     let sum = num1 + num2
+//     return sum
+
+// }
+
+// console.log(add(3,4))
+
+
+function getFirst(arr) {
+    return arr [1]
+
 }
 
-greetUser("hwllo", "motto")
+fruits = ["apple", "sanquas", "sdwwr"]
 
-function add(num1, num2) {
-    let sum = num1 + num2
-    return sum
-
-}
-
-console.log(add(3,4))
+console.log(getFirst(fruits))
