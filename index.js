@@ -493,14 +493,15 @@ if (leadsFromLocalStorage)
     render(myLeads)
 }
 
-const tab = [
-    {url: "www.lic.com"}
-]
 
 tabBtn.addEventListener("click", function (){
-    // console.log(tab[0])
-    myLeads.push(tab[0])
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+
+    chrome.tabs.query({active:true, currentWindow:true}, function (tabs) {
+
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))    })
+        render(myLeads)
+
 })
 
 
