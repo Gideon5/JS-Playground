@@ -12,11 +12,12 @@
    
 // //  }
 
-// // function save() {
-// //         let saveCount = count + " - "
-// //         saveEl.textContent += saveCount
-// //         countEl.textContent = 0
-// //         count = 0
+// function save() {
+//         let saveCount = count + " - "
+//         saveEl.textContent += saveCount
+//         countEl.textContent = 0
+//         count = 0
+
 
 // //         console.log(count)
            
@@ -24,6 +25,7 @@
 
 // // // let username = "Amos"
 // // // let message = ' You have three new notifs'
+
 
 // // // name = "Alex"
 // // // greeting = "Hi , ton nom est "
@@ -480,9 +482,11 @@ const ulEl = document.getElementById("ul-el")
 const buyBtn = document.getElementById("div-el")
 
 
-
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // localStorage.setItem("myLeads", "www.abaane.com")//setter
 // console.log(localStorage.getItem("myLeads"))//getter
+
+console.log(leadsFromLocalStorage)
 
 
 savebtn.addEventListener("click", function()
