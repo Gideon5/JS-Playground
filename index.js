@@ -486,8 +486,11 @@ let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // localStorage.setItem("myLeads", "www.abaane.com")//setter
 // console.log(localStorage.getItem("myLeads"))//getter
 
-console.log(leadsFromLocalStorage)
-
+if (leadsFromLocalStorage) 
+{
+    myLeads = leadsFromLocalStorage
+    renderLeads()
+}
 
 savebtn.addEventListener("click", function()
 {
