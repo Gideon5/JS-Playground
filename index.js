@@ -480,9 +480,9 @@ const inputEl = document.getElementById("input-el")
 const savebtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const buyBtn = document.getElementById("div-el")
+const delBtn = document.getElementById("delete-btn")
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
-
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // localStorage.setItem("myLeads", "www.abaane.com")//setter
 // console.log(localStorage.getItem("myLeads"))//getter
 
@@ -491,6 +491,12 @@ if (leadsFromLocalStorage)
     myLeads = leadsFromLocalStorage
     renderLeads()
 }
+
+delBtn.addEventListener("dblclick", function(){
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+})
 
 savebtn.addEventListener("click", function()
 {
