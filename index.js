@@ -459,12 +459,12 @@
 // }
 
 
-let myLeads = `["www.zanku.com"]`
+let myLeads = []
 
-myLeads = JSON.parse(myLeads)
-myLeads.push("www.abnie(newsite opushed")
-myLeads = JSON.stringify(myLeads)
-console.log(typeof myLeads)
+// myLeads = JSON.parse(myLeads)
+// myLeads.push("www.abnie(newsite opushed")
+// myLeads = JSON.stringify(myLeads)
+// console.log(typeof myLeads)
 
 
 
@@ -489,8 +489,11 @@ savebtn.addEventListener("click", function()
 {
     myLeads.push(inputEl.value)
     inputEl.value = '';
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+
+
     renderLeads()
-// console.log(myLeads)
+   console.log(localStorage.getItem("myLeads"))
 }
 )
 function renderLeads() {
