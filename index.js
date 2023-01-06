@@ -571,7 +571,7 @@ savebtn.addEventListener("click", function()
 // localStorage.clear()
 
 function greetUser(name, greeting) {
-    console.log( greeting + name)
+    console.log( `${greeting}, ${name}`)
 }
 
-greetUser("aloid")
+greetUser("hwllo", "motto")
