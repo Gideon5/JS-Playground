@@ -489,13 +489,37 @@ const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 if (leadsFromLocalStorage) 
 {
     myLeads = leadsFromLocalStorage
-    renderLeads()
+    render(myLeads)
 }
+
+
+function render(leads) {
+    let listItems = ""
+for ( let i = 0; i < leads.length; i++){
+
+      listItems += `
+      <li>
+         <a target='_blank' href='${leads[i]}'>
+            ${leads[i]}
+         </a>
+      </li>
+      `
+    console.log(listItems)
+
+  
+    // const li = document.createElement("li")
+    // li.textContent = leads[i]
+    // buyBtn.append(li)
+}
+
+buyBtn.innerHTML = listItems
+}
+
 
 delBtn.addEventListener("dblclick", function(){
     localStorage.clear()
     myLeads = []
-    renderLeads()
+    render(myLeads)
 })
 
 savebtn.addEventListener("click", function()
@@ -505,31 +529,10 @@ savebtn.addEventListener("click", function()
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
 
 
-    renderLeads()
+    render(myLeads)
    console.log(localStorage.getItem("myLeads"))
 }
 )
-function renderLeads() {
-    let listItems = ""
-for ( let i = 0; i < myLeads.length; i++){
-
-      listItems += `
-      <li>
-         <a target='_blank' href='${myLeads[i]}'>
-            ${myLeads[i]}
-         </a>
-      </li>
-      `
-    console.log(listItems)
-
-  
-    // const li = document.createElement("li")
-    // li.textContent = myLeads[i]
-    // buyBtn.append(li)
-}
-
-buyBtn.innerHTML = listItems
-}
 // buyBtn.innerHTML = "<button onclick='buy()'>BUY!</button>" 
 
 // function buy() {
