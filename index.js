@@ -498,7 +498,9 @@ const tab = [
 ]
 
 tabBtn.addEventListener("click", function (){
-    console.log(tab[0].url)
+    // console.log(tab[0])
+    myLeads.push(tab[0])
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
 })
 
 
