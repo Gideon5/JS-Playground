@@ -653,8 +653,14 @@ buyBtn.innerHTML = listItems
 
 function generateSentence(desc, arr){
     let sentence = `The ${arr.length} ${desc} are`
+    const lastIndex = arr.length - 1
     for(let i = 0; i < arr.length; i++){
-        sentence += arr[i] + ", "
+        if (i === lastIndex){
+            sentence += arr[i]
+        } else {
+            sentence += arr[i] + ", "
+
+        }
     }
  console.log(sentence)
 }
