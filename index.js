@@ -667,5 +667,5 @@ function generateSentence(desc, arr){
 generateSentence("best things", ["food", "alewa"])
 
 const imgs = [
-    ""
+    "images[p"
 ]
