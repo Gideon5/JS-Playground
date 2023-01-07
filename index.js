@@ -597,26 +597,33 @@ savebtn.addEventListener("click", function()
 // console.log(add(3,4))
 
 
-function getFirst(arr) {
-    return arr [1]
+// function getFirst(arr) {
+//     return arr [1]
 
+// }
+
+// fruits = ["apple", "sanquas", "sdwwr"]
+
+// console.log(getFirst(fruits))
+
+// let player = "Amos"
+// let opponent = "Wright"
+// const game ="MK4"
+// let points = 0
+// let hasWon = false
+
+// points = 100
+// hasWon = true
+
+// if (hasWon){
+//     console.log(`${player}  got  ${points}  points and won the game  ${game} game!` )
+// } else {
+//     console.log(`The winner is ${opponent}! and ${player} lost the game`)
+// }
+
+let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
+function courses(arr){
+    console.log(arr)
 }
 
-fruits = ["apple", "sanquas", "sdwwr"]
-
-console.log(getFirst(fruits))
-
-let player = "Amos"
-let opponent = "Wright"
-const game ="MK4"
-let points = 0
-let hasWon = false
-
-points = 100
-hasWon = true
-
-if (hasWon){
-    console.log(`${player}  got  ${points}  points and won the game  ${game} game!` )
-} else {
-    console.log(`The winner is ${opponent} ! and ${player} lost the game`)
-}
+courses(myCourses)
