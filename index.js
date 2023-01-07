@@ -494,15 +494,15 @@ if (leadsFromLocalStorage)
 }
 
 
-tabBtn.addEventListener("click", function (){
+// tabBtn.addEventListener("click", function (){
 
-    chrome.tabs.query({active:true, currentWindow:true}, function (tabs) {
+//     chrome.tabs.query({active:true, currentWindow:true}, function (tabs) {
 
-        myLeads.push(tabs[0].url)
-        localStorage.setItem("myLeads", JSON.stringify(myLeads))    })
-        render(myLeads)
+//         myLeads.push(tabs[0].url)
+//         localStorage.setItem("myLeads", JSON.stringify(myLeads))    })
+//         render(myLeads)
 
-})
+// })
 
 
 function render(leads) {
@@ -528,23 +528,23 @@ buyBtn.innerHTML = listItems
 }
 
 
-delBtn.addEventListener("dblclick", function (){
-    localStorage.clear()
-    myLeads = []
-    render(myLeads)
-})
+// delBtn.addEventListener("dblclick", function (){
+//     localStorage.clear()
+//     myLeads = []
+//     render(myLeads)
+// })
 
-savebtn.addEventListener("click", function()
-{
-    myLeads.push(inputEl.value)
-    inputEl.value = '';
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+// savebtn.addEventListener("click", function()
+// {
+//     myLeads.push(inputEl.value)
+//     inputEl.value = '';
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
 
 
-    render(myLeads)
-   console.log(localStorage.getItem("myLeads"))
-}
-)
+//     render(myLeads)
+//    console.log(localStorage.getItem("myLeads"))
+// }
+// )
 // buyBtn.innerHTML = "<button onclick='buy()'>BUY!</button>" 
 
 // function buy() {
@@ -630,4 +630,23 @@ savebtn.addEventListener("click", function()
 
 // courses(myCourses)
 
-console.log(localStorage.getItem("item"))
+// pushed = localStorage.setItem("item", "Amose")
+// console.log(localStorage.getItem("item")) 
+
+let data = [
+    {
+        player: "Jane",
+        score: 52
+    },
+    {
+        player: "Mark",
+        score: 41
+    }
+]
+
+let scoreBtn = document.getElementById("view")
+
+scoreBtn.addEventListener("click", function() {
+    console.log(data[0].score)
+}
+)
