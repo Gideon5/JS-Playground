@@ -623,7 +623,9 @@ savebtn.addEventListener("click", function()
 
 let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
 function courses(arr){
-    console.log(arr)
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i])
+        }
 }
 
 courses(myCourses)
