@@ -633,20 +633,29 @@ buyBtn.innerHTML = listItems
 // pushed = localStorage.setItem("item", "Amose")
 // console.log(localStorage.getItem("item")) 
 
-let data = [
-    {
-        player: "Jane",
-        score: 52
-    },
-    {
-        player: "Mark",
-        score: 41
+// let data = [
+//     {
+//         player: "Jane",
+//         score: 52
+//     },
+//     {
+//         player: "Mark",
+//         score: 41
+//     }
+// ]
+
+// let scoreBtn = document.getElementById("view")
+
+// scoreBtn.addEventListener("click", function() {
+//     console.log(data[0].score)
+// }
+// )
+
+function generateSentence(desc, arr){
+    let sentence = `The ${arr.length} ${desc} are`
+    for(let i = 0; i < arr.length; i++){
+        sentence += arr[i] + ", "
     }
-]
-
-let scoreBtn = document.getElementById("view")
-
-scoreBtn.addEventListener("click", function() {
-    console.log(data[0].score)
+ console.log(sentence)
 }
-)
+generateSentence("best things", ["food", "alewa"])
