@@ -528,7 +528,7 @@ buyBtn.innerHTML = listItems
 }
 
 
-delBtn.addEventListener("dblclick", function(){
+delBtn.addEventListener("dblclick", function (){
     localStorage.clear()
     myLeads = []
     render(myLeads)
@@ -621,11 +621,13 @@ savebtn.addEventListener("click", function()
 //     console.log(`The winner is ${opponent}! and ${player} lost the game`)
 // }
 
-let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
-function courses(arr){
-    for(let i = 0; i < arr.length; i++){
-        console.log(arr[i])
-        }
-}
+// let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
+// function courses(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         console.log(arr[i])
+//         }
+// }
 
-courses(myCourses)
+// courses(myCourses)
+
+console.log(localStorage.getItem("item"))
