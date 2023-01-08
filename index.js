@@ -671,15 +671,16 @@ const imgs = [
     "img2.jpg",
     "img3.jpg"
 ]
+
 image = document.getElementById("div-el")
-function display(arr) {
-    for(let i = 0; i < arr.length; i++){
 
-      loop =  `<img src=${arr[i]}>`
+function display() {
+    for(let i = 0; i < imgs.length; i++){
 
-        image.innerHTML += loop
+       
+
+        image.innerHTML += `<img class="team-img" src=${imgs[i]}></img>`
     }
 
 }
 
-console.log(display(imgs))
