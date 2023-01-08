@@ -667,6 +667,19 @@ function generateSentence(desc, arr){
 generateSentence("best things", ["food", "alewa"])
 
 const imgs = [
-    "images[p".charAt
-    ,"umahes{1}"
+    "img1.jpg",
+    "img2.jpg",
+    "img3.jpg"
 ]
+image = document.getElementById("div-el")
+function display(arr) {
+    for(let i = 0; i < arr.length; i++){
+
+      loop =  `<img src=${arr[i]}>`
+
+        image.innerHTML += loop
+    }
+
+}
+
+console.log(display(imgs))

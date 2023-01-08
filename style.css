@@ -83,3 +83,9 @@ a {
     border-color: green;
 
 }
+
+.team-img {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px;
+}
